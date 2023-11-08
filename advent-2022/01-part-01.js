@@ -6,7 +6,7 @@ function countCalories() {
       return data.toString().split('\n');
     })
     .then((entries) => {
-      let arrayOfArrays = [];
+      const arrayOfArrays = [];
       let tempArray = [];
       for (let entry of entries) {
         if (entry !== '') {
