@@ -19,15 +19,15 @@ function calculateScore() {
     .then((tally) => {
       let score = 0;
       for (let key in tally) {
-        if (key === 'A X') score += 4 * tally[key];
-        if (key === 'A Y') score += 8 * tally[key];
-        if (key === 'A Z') score += 3 * tally[key];
         if (key === 'B X') score += 1 * tally[key];
-        if (key === 'B Y') score += 5 * tally[key];
-        if (key === 'B Z') score += 9 * tally[key];
-        if (key === 'C X') score += 7 * tally[key];
         if (key === 'C Y') score += 2 * tally[key];
+        if (key === 'A Z') score += 3 * tally[key];
+        if (key === 'A X') score += 4 * tally[key];
+        if (key === 'B Y') score += 5 * tally[key];
         if (key === 'C Z') score += 6 * tally[key];
+        if (key === 'C X') score += 7 * tally[key];
+        if (key === 'A Y') score += 8 * tally[key];
+        if (key === 'B Z') score += 9 * tally[key];
       }
       return score;
     });
