@@ -1,7 +1,7 @@
 const fs = require('fs/promises');
 
 function countCalories() {
-  return fs.readFile(`${__dirname}/data/elves.txt`)
+  return fs.readFile(`${__dirname}/data/elf-calories.txt`)
     .then((data) => {
       return data.toString().split('\n');
     })
