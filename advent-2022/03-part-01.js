@@ -8,14 +8,14 @@ function getRucksacks() {
 }
 
 function splitRucksacks(rucksacks) {
-  const splitRucksacks = [];
+  const rucksackHalves = [];
   rucksacks.forEach(rucksack => {
-    return splitRucksacks.push([
+    return rucksackHalves.push([
       rucksack.slice(0, rucksack.length / 2),
       rucksack.slice(rucksack.length / 2)
     ]);
   });
-  return splitRucksacks;
+  return rucksackHalves;
 }
 
 function findCommonItems(splitRucksacks) {
@@ -49,8 +49,8 @@ getRucksacks()
   .then((data) => {
     return splitRucksacks(data);
   })
-  .then((splitRucksacks) => {
-    return findCommonItems(splitRucksacks);
+  .then((rucksackHalves) => {
+    return findCommonItems(rucksackHalves);
   })
   .then((commonItems) => {
     return sumItemPriorities(commonItems);
