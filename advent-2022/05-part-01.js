@@ -9,7 +9,7 @@ function extractData(data) {
     if (row.match(/[A-Z]/)) {
       return crateRows.push(row);
     }
-    if (row.match(/^move \d+ from \d+ to \d+/)) {
+    if (row.match(/move \d+ from \d+ to \d+/)) {
       return moves.push(row);
     }
   });
