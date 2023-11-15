@@ -1,6 +1,7 @@
 const fs = require('fs/promises');
+const { sumItemPriorities } = require('./utils/03-utils');
 
-function getRucksacks() {
+function getRucksackData() {
   return fs.readFile(`${__dirname}/data/rucksacks.txt`)
     .then((data) => {
       return data.toString().split('\n');
@@ -32,31 +33,18 @@ function findCommonItems(splitRucksacks) {
   return commonItems;
 }
 
-function sumItemPriorities(commonItems) {
-  let sum = 0;
-  for (let item of commonItems) {
-    if (item.match(/[a-z]/)) {
-      sum += item.charCodeAt() - 96;
-    }
-    if (item.match(/[A-Z]/)) {
-      sum += item.charCodeAt() - 38;
-    }
-  }
-  return sum;
-}
-
-getRucksacks()
+getRucksackData()
   .then((data) => {
     return splitRucksacks(data);
   })
-  .then((rucksackHalves) => {
-    return findCommonItems(rucksackHalves);
+  .then((result) => {
+    return findCommonItems(result);
   })
-  .then((commonItems) => {
-    return sumItemPriorities(commonItems);
+  .then((result) => {
+    return sumItemPriorities(result);
   })
-  .then((sum) => {
-    console.log(sum);
+  .then((result) => {
+    console.log(result);
   })
   .catch((err) => {
     console.log(err);
