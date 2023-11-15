@@ -4,13 +4,13 @@ const path = `${__dirname}/data/datastream-buffer.txt`;
 
 function findMessageMarker(data) {
   for (let i = 0; i < data.length; i++) {
-    const messageMarker = []
+    const messageMarker = [];
     for (let j = 0; j < 14; j++) {
-      messageMarker.push(data[i + j])
+      messageMarker.push(data[i + j]);
     }
     const uniqueChars = new Set(messageMarker);
     if (messageMarker.length === uniqueChars.size) {
-      return i + 14
+      return i + 14;
     }
   }
 }
