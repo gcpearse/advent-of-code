@@ -2,11 +2,14 @@ const { getDataString } = require('./utils/06-utils');
 
 const path = `${__dirname}/data/datastream-buffer.txt`;
 
-function findMarker(data) {
+function findPacketMarker(data) {
   for (let i = 0; i < data.length; i++) {
-    const marker = Array(data[i], data[i + 1], data[i + 2], data[i + 3]);
-    const uniqueChars = new Set(marker);
-    if (marker.length === uniqueChars.size) {
+    const packetMarker = []
+    for (let j = 0; j < 4; j++) {
+      packetMarker.push(data[i + j])
+    }
+    const uniqueChars = new Set(packetMarker);
+    if (packetMarker.length === uniqueChars.size) {
       return i + 4;
     }
   }
@@ -14,7 +17,7 @@ function findMarker(data) {
 
 getDataString(path)
   .then((data) => {
-    return findMarker(data);
+    return findPacketMarker(data);
   })
   .then((result) => {
     console.log(result);
