@@ -1,12 +1,7 @@
-const fs = require('fs/promises');
+const { getData } = require('./utils/general-utils');
 const { tallyRounds } = require('./utils/02-utils');
 
-function getStrategyData() {
-  return fs.readFile(`${__dirname}/data/strategy-guide.txt`)
-    .then((data) => {
-      return data.toString().split('\n');
-    });
-}
+const path = `${__dirname}/data/strategy-guide.txt`;
 
 function getScore(tally) {
   let score = 0;
@@ -24,7 +19,7 @@ function getScore(tally) {
   return score;
 }
 
-getStrategyData()
+getData(path)
   .then((data) => {
     return tallyRounds(data);
   })

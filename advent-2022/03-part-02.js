@@ -1,12 +1,7 @@
-const fs = require('fs/promises');
+const { getData } = require('./utils/general-utils');
 const { sumItemPriorities } = require('./utils/03-utils');
 
-function getRucksackData() {
-  return fs.readFile(`${__dirname}/data/rucksacks.txt`)
-    .then((data) => {
-      return data.toString().split('\n');
-    });
-}
+const path = `${__dirname}/data/rucksacks.txt`;
 
 function makeGroupsOfThree(rucksacks) {
   const groups = [];
@@ -33,7 +28,7 @@ function findCommonItems(groups) {
   return commonItems;
 }
 
-getRucksackData()
+getData(path)
   .then((data) => {
     return makeGroupsOfThree(data);
   })
