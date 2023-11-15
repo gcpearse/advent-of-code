@@ -1,12 +1,6 @@
-const fs = require('fs/promises');
-const path = `${__dirname}/data/datastream-buffer.txt`;
+const { getDataString } = require('./utils/06-utils');
 
-function getDataString(path) {
-  return fs.readFile(path)
-    .then((data) => {
-      return data.toString();
-    });
-}
+const path = `${__dirname}/data/datastream-buffer.txt`;
 
 function findMarker(data) {
   for (let i = 0; i < data.length; i++) {
