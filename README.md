@@ -20,11 +20,16 @@ Eric Wastl
 
 **Beta Testing:**
 
-Tim Giannetti, Ben Lucek, JP Burke, Aneurysm9, and Andrew Skalski
+Tim Giannetti\
+Ben Lucek\
+JP Burke\
+Aneurysm9\
+Andrew Skalski
 
 **Community Managers:**
 
-Danielle Lucek and Aneurysm9
+Danielle Lucek\
+Aneurysm9
 
 ## Legal
 
