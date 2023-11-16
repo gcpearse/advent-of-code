@@ -12,6 +12,16 @@ I started working on Advent of Code as a side project in late 2022 to support my
 
 All challenges have been completed in **JavaScript**. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
 
+### Contents
+
+Text files with raw data for each puzzle can be found in the **data** folder.
+
+Instructions for each challenge are saved in markdown files in **instructions**.
+
+The **utils** folder contains files with utility functions used by functions within each solution.
+
+The puzzle files themselves are named using the format **01-part-01**.
+
 ## Credits
 
 **Puzzles, Code, Design:**
