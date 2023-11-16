@@ -2,15 +2,15 @@
 
 Advent of Code is a resource created by Eric Wastl and available at https://adventofcode.com.
 
-Programming puzzles are released from 1st to 25th December each year, allowing users to test their skills.
+Programming puzzles are released from 1st to 25th December each year, allowing users to test their programming skills.
 
-Challengers can be solved with any programming language the user chooses.
+Challengers can be solved with any programming language chosen by the user.
 
 ## My Advent of Code Repository
 
-I started working on Advent of Code as a side project in late 2022, to support my learning while on the Northcoders bootcamp.
+I started working on Advent of Code as a side project in late 2022 to support my learning while on the Northcoders bootcamp.
 
-All challenges have been completed in JavaScript, with the raw data for each puzzle saved in a text file and parsed, rather than being hard coded.
+All challenges have been completed in **JavaScript**. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
 
 ## Credits
 
