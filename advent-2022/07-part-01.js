@@ -8,7 +8,9 @@ function splitData(data) {
 
 function getDirectories(data) {
   let path = "";
-  const directories = {};
+  const directories = {
+    "/root": 0
+  };
   for (let item of data) {
     if (item[1] !== "ls" && item[0] !== "dir") {
       if (item[0] === "$") {
@@ -16,7 +18,7 @@ function getDirectories(data) {
           if (item[2] === "..") {
             path = path.slice(0, path.lastIndexOf("/"));
           } else if (item[2] === "/") {
-            path = "";
+            path = "/root";
           } else {
             path = `${path}/${item[2]}`;
             directories[path] = 0;
