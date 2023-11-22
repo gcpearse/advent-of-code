@@ -6,15 +6,15 @@ Programming puzzles are released from 1st to 25th December each year, allowing u
 
 ## My Advent of Code Repository
 
-All challenges have been completed in **```JavaScript```**. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
+All challenges have been completed in ```JavaScript```. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
 
 ### Contents
 
-Instructions for each challenge are saved in **```instructions```** as markdown files..
+Instructions for each challenge are saved in ```instructions``` as markdown files..
 
-Text files with raw data for each puzzle can be found in the **```data```** folder.
+Text files with raw data for each puzzle can be found in the ```data``` folder.
 
-The **```utils```** folder contains utility functions that are exported into other files.
+The ```utils``` folder contains utility functions that are exported into other files.
 
 Puzzle solution files are ordered sequentially by release date. For example, ```01-part-01.js``` in ```advent-2022``` is the solution for the first part of the puzzle for 1st December 2022.
 
