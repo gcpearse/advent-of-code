@@ -6,7 +6,7 @@ Advent of Code is a resource created by Eric Wastl and available at https://adve
 
 Programming puzzles are released from 1st to 25th December each year, allowing users to test their programming skills. Challenges can be solved with any programming language chosen by the user.
 
-All challenges in this repository have been completed using ```JavaScript```. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
+All puzzle solutions in this repository are now written in ```TypeScript```. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
 
 ### Contents
 
