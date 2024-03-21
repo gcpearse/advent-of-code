@@ -6,15 +6,19 @@ Advent of Code is a resource created by Eric Wastl and available at https://adve
 
 Programming puzzles are released from 1st to 25th December each year, allowing users to test their programming skills. Challenges can be solved with any programming language chosen by the user.
 
-All puzzle solutions in this repository are now written in **TypeScript**. The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
+All puzzle solutions in this repository are now written in **TypeScript**. Some earlier solutions were written in JavaScript and later converted to TypeScript.
+
+The raw data for each puzzle has been saved in a text file and parsed, rather than being hard coded.
 
 ## Contents
 
-Instructions for each challenge are saved in `instructions` as markdown files.
+Instructions for each challenge are saved in the `instructions` folder as markdown files.
 
 Text files with raw data for each puzzle can be found in the `data` folder.
 
-The `utils` folder contains utility functions that are exported into other files.
+Functions that are imported into two or more challenge files are stored in files within the `utils` folder.
+
+The `types` folder contains custom type aliases.
 
 Puzzle solution files are ordered sequentially by release date. For example, `01-part-01.js` in `advent-2022` is the solution for the first part of the puzzle for 1st December 2022.
 
