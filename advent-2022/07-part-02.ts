@@ -3,7 +3,7 @@ import { getDirectories, splitData } from "./utils/07-utils"
 import { getData } from "./utils/general-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/terminal-output.txt`
+const path = `${__dirname}/../../advent-2022/data/terminal-output.txt`
 
 
 function findDirectoryToDelete(directories: Directories): number | void {

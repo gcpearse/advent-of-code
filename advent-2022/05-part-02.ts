@@ -2,7 +2,7 @@ import { extractData, createStacks, createSteps, findTopCrates } from "./utils/0
 import { getData } from "./utils/general-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/rearrangement-procedure.txt`
+const path = `${__dirname}/../../advent-2022/data/rearrangement-procedure.txt`
 
 
 function rearrangeCrates(stacks: string[][], steps: string[][]): string[][] {

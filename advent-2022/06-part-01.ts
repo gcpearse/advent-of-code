@@ -1,7 +1,7 @@
 import { getDataString } from "./utils/06-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/datastream-buffer.txt`
+const path = `${__dirname}/../../advent-2022/data/datastream-buffer.txt`
 
 
 function findPacketMarker(data: string): number | void {

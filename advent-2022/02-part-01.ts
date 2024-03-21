@@ -3,7 +3,7 @@ import { tallyRounds } from "./utils/02-utils"
 import { Tally } from "./types/02-types"
 
 
-const path = `${__dirname}/../advent-2022/data/strategy-guide.txt`
+const path = `${__dirname}/../../advent-2022/data/strategy-guide.txt`
 
 
 function getScore(tally: Tally): number {

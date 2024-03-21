@@ -2,7 +2,7 @@ import { getData } from "./utils/general-utils"
 import { sumItemPriorities } from "./utils/03-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/rucksacks.txt`
+const path = `${__dirname}/../../advent-2022/data/rucksacks.txt`
 
 
 function splitRucksacks(rucksacks: string[]): string[][] {

@@ -2,7 +2,7 @@ import { getData } from "./utils/general-utils"
 import { createPairs, createNestedPairs } from "./utils/04-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/section-assignments.txt`
+const path = `${__dirname}/../../advent-2022/data/section-assignments.txt`
 
 
 function sumOverlappingRanges(nestedPairs: string[][][]): number {

@@ -2,7 +2,7 @@ import { getData } from "./utils/general-utils"
 import { createArrayOfArrays, findTotals } from "./utils/01-utils"
 
 
-const path = `${__dirname}/../advent-2022/data/elf-calories.txt`
+const path = `${__dirname}/../../advent-2022/data/elf-calories.txt`
 
 
 function findTopThreeTotals(arrayOfTotals: number[]): number {
